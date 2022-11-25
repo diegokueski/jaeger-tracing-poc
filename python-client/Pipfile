@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+opentelemetry-api = "*"
+opentelemetry-sdk = "*"
+opentelemetry-exporter-jaeger = "*"
+
+[requires]
+python_version = "3.7"
