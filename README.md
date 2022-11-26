@@ -1,8 +1,4 @@
-##Delete container name
-docker rm jaeger
-
-## Run local
-#docker run -d --name jaeger \
+## Run locally 
 docker run --rm -d --name jaeger \
   -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
   -e COLLECTOR_OTLP_ENABLED=true \

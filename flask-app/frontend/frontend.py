@@ -20,7 +20,7 @@ config = Config(
         'logging': True,
         'reporter_batch_size': 1,
     }, 
-    service_name="frontend")
+    service_name="service")
 jaeger_tracer = config.initialize_tracer()
 tracing = FlaskTracing(jaeger_tracer, True, app)
 
@@ -43,3 +43,7 @@ def hello_world():
     return f"""Hello, World!
 
 You're visitor number {counter} in here!\n\n"""
+
+@app.route('/say-hello')
+def say_hello():
+    return f"Hello!"
