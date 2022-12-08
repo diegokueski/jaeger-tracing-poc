@@ -1,3 +1,5 @@
+docker rm jaeger
+
 ## Run locally 
 docker run --rm -d --name jaeger \
   -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
@@ -14,5 +16,5 @@ docker run --rm -d --name jaeger \
   -p 9411:9411 \
   jaegertracing/all-in-one:1.38
 
-# Navigate to this link
++ Jaeger UI
 http://localhost:16686/
