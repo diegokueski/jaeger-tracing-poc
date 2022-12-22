@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jaeger-client = "*"
+requests = "*"
+flask = "*"
+futures = "*"
+Flask-Opentracing = "*"
+opentracing_instrumentation = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
