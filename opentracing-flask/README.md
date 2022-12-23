@@ -4,7 +4,7 @@
 https://github.com/opentracing-contrib/python-flask/tree/master/example
 
 ## Local setup
-pipenv install -r path/to/requirements.txt
+pipenv install -r requirements.txt
 pipenv shell
 
 ## Run locally
